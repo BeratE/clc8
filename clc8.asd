@@ -8,4 +8,5 @@
   :serial t
   :depends-on ("alexandria")
   :components ((:file "package")
-               (:file "clc8")))
+               (:file "clc8")
+	       (:file "instructions")))
