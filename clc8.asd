@@ -6,7 +6,11 @@
   :license  "GNU GPLv3"
   :version "0.0.1"
   :serial t
-  :depends-on ("alexandria")
+  :depends-on ("alexandria" "cl-opengl" "sdl2")
   :components ((:file "package")
-               (:file "clc8")
-	       (:file "instructions")))
+	       (:module "src"
+			:components
+			((:file "clc8")
+			 (:file "instructions")
+			 (:file "graphics")
+			 (:file "display" :depends-on ("graphics"))))))
